@@ -165,6 +165,9 @@ footer p {
 .dark-mode a {
     color: #f9f9f9;
 }
+.dark-mode section a {
+    color: #f9f9f9;
+}
 
 .dark-mode header {
     background-color: #333;
@@ -215,3 +218,40 @@ footer p {
     margin-top: 10px;
     font-size: 14px;
 }
+
+.card {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .card h3 {
+    margin: 0;
+  }
+  
+  .card .description {
+    display: none;
+  }
+  
+  .card:hover .description {
+    display: block;
+  }
