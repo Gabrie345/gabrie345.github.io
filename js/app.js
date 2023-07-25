@@ -11,3 +11,18 @@ toggleButton.addEventListener('click', function() {
         toggleButton.textContent = 'Modo Escuro';
         }
 });
+
+(function() {
+    console.log("Biblioteca do Emailjs inicializada.");
+    emailjs.init("Z0iEVgBQFyoxTkvaS");
+})();
+
+function sendEmail() {
+    const contactForm = document.getElementById("contact-form");
+    emailjs.sendForm("service_iezhfgw", "template_lhodvsv", contactForm)
+      .then(function(response) {
+        alert("Email sent successfully!");
+      }, function(error) {
+        alert("Failed to send email. Please try again later.");
+      });
+  }

@@ -6,8 +6,8 @@
     <title>Portifolio Gabriel Dev</title>
     <link rel="icon" href="./favicons/portfolio-profissional.png">
     <link rel="stylesheet" href="./css/style.css">
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script defer src="./js/app.js"></script>
-    <script defer src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -141,7 +141,7 @@
                     <p>WhatsApp</p>
                 </a>
             </div>
-            <form id="contact-form" class="contact-form">
+            <form onsubmit="sendEmail(); return false;" id="contact-form" class="contact-form">
                 <div>
                     <label for="name">Nome:</label>
                     <input type="text" id="name" name="name" required>
