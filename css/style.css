@@ -245,7 +245,7 @@ footer p {
   
   .card img {
     max-width: 100%;
-    height: auto;
+    height: 80%;
     display: block;
     margin-bottom: 10px;
   }
